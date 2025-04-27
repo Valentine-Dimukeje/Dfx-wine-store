@@ -1,0 +1,36 @@
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+  .home h1 {
+    font-size: 3rem;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .home p {
+    font-size: 1.2rem;
+    color: black;
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
