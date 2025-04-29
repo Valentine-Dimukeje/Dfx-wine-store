@@ -12,7 +12,7 @@ function Homes() {
         animate={{ scale: 1, rotate: 0, opacity: 1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
       >
-        Step Up Your Style with Gidi'z Collection
+        Step Up Your Style with Gidi'z Collection.
       </motion.h1>
 
       {/* Animated Paragraph - Slide from Right */}
