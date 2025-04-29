@@ -34,10 +34,10 @@ const products = [
   { id: 29, name: 'Slide', price: '$12', image: '/image/slide4.jpeg'},
   { id: 30, name: 'Slide', price: '$10', image: '/image/slide5.jpeg'},
   { id: 31, name: 'Crocs', price: '$15', image: '/image/crocs.jpeg'},
-  // { id: 32, name: 'Crocs', price: '$11', image: '/image/crocs2.jpeg'},
-  // { id: 33, name: 'Crocs', price: '$8', image: '/image/crocs3.jpeg'},
-  // { id: 34, name: 'Crocs', price: '$13', image: '/image/crocs4.jpeg'},
-  // { id: 35, name: 'Crocs', price: '$10', image: '/image/crocs5.jpeg'},
+  { id: 32, name: 'Crocs', price: '$11', image: '/image/crocs2.jpeg'},
+  { id: 33, name: 'Crocs', price: '$8', image: '/image/crocs3.jpeg'},
+  { id: 34, name: 'Crocs', price: '$13', image: '/image/crocs4.jpeg'},
+  { id: 35, name: 'Crocs', price: '$10', image: '/image/crocs5.jpeg'},
 ];
 
 function Product({ addToCart }) {

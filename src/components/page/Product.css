@@ -13,6 +13,7 @@
   gap: 20px; /* Space between the items */
 }
 
+
 .product-card {
   background-color: #fff;
   padding: 20px;
@@ -84,10 +85,15 @@
 }
 
 .modal-content select {
-  margin: 10px 0;
-  padding: 8px;
-  width: 100%;
+  font-size: 12px;         /* Smaller text */
+  padding: 4px 6px;        /* Less internal space */
+  width: 50%;              /* Reduce width */
+  border-radius: 4px;      /* Optional: smaller rounding */
+  display: block;
+  margin: 10px auto;       /* Center it */
+  line-height: 1.2;        /* Optional: tighter vertical spacing */
 }
+
 
 .modal-content button {
   padding: 10px 20px;

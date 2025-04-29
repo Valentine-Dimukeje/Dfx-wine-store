@@ -12,9 +12,9 @@ function Navbarz({ isLoggedIn, handleLogout, cartItemCount }) {
         <li><Link to="/product"><FaShoppingBag /> Products</Link></li>
         <li><Link to="/abouts"><FaInfoCircle /> About</Link></li>
         <li><Link to="/contacts"><FaEnvelope /> Contact</Link></li>
-        
 
-        <div className="cart-link"></div>
+
+        {/* <div className="cart-link"></div> */}
         <li className="cart-link">
           <Link to="/cart">
             <FaShoppingCart /> 
@@ -27,11 +27,11 @@ function Navbarz({ isLoggedIn, handleLogout, cartItemCount }) {
 
         {isLoggedIn ? (
           <li onClick={handleLogout}>
-            <FaSignOutAlt /> Sign Out
+            <FaSignOutAlt /> SignOut
           </li>
         ) : (
           <li onClick={() => console.log("Signup link clicked")}>
-          <Link to="/signup"><FaSignInAlt /> Sign Up</Link>
+          <Link to="/signup"><FaSignInAlt /> SignUp</Link>
         </li>
         
         )}

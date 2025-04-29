@@ -34,15 +34,15 @@
   }
   
     .home h1 {
-      font-size: 3rem;
-      color: white;
-      font-family: 'Inter', sans-serif;
+      font-size: 2rem;
+      color: black;
+      font-family: 'Courier New', Courier, monospace;
     }
     
     .home p {
-      font-size: 1.2rem;      
+      font-size: 1.1rem;      
       color: white;
       margin-top: 20px;
-      font-family: 'Playfair Display', serif;
+      font-family: 'Courier New', Courier, monospace;
     }
     
