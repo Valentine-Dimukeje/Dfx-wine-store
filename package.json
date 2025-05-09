@@ -2,7 +2,7 @@
   "name": "my",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Valentine-Dimukeje.github.io/my-react-project4141",
+  "homepage": "https://Valentine-Dimukeje.github.io/my-react-project",
   "dependencies": {
     "@stripe/react-stripe-js": "^3.6.0",
     "@stripe/stripe-js": "^7.2.0",
