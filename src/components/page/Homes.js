@@ -5,27 +5,32 @@ import './Homes.css';
 function Homes() {
   return (
     <div className="home">
+      <div className="overlay" />
 
-      {/* Animated Heading - Scale & Rotate */}
-      <motion.h1
-        initial={{ scale: 0.5, rotate: -15, opacity: 0 }}
-        animate={{ scale: 1, rotate: 0, opacity: 1 }}
-        transition={{ duration: 1.2, ease: "easeOut" }}
+      <motion.div
+        className="content"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
       >
-        Step Up Your Style with Gidi'z Collection.
-      </motion.h1>
+        <motion.h1
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+        >
+          Step Up Your Style with <span className="highlight">Gidi'z Collection</span>
+        </motion.h1>
 
-      {/* Animated Paragraph - Slide from Right */}
-      <motion.p
-        initial={{ x: 100, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ delay: 0.3, duration: 1, type: "tween" }}
-      >
-        From the boardroom to the boulevard — we’ve got your soles covered.<br />
-        Explore our premium range of corporate shoes, casual Shoes, slides, sneakers, and Crocs!<br />
-        <em>Because every great journey begins with the right pair.</em>
-      </motion.p>
-
+        <motion.p
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.6, duration: 1 }}
+        >
+          From the boardroom to the boulevard — we’ve got your soles covered.<br />
+          Explore our premium range of corporate shoes, casual shoes, slides, sneakers, and Crocs.<br />
+          <em>Because every great journey begins with the right pair.</em>
+        </motion.p>
+      </motion.div>
     </div>
   );
 }
