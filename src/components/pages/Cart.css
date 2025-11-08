@@ -1,56 +1,188 @@
 .cart-page {
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .empty-cart {
-    font-size: 1.2rem;
-    text-align: center;
-    color: #777;
-  }
-  
-  .cart-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .cart-item {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #ddd;
-    padding: 1rem 0;
-  }
-  
-  .cart-image {
-    width: 80px;
-    height: auto;
-    margin-right: 1rem;
-    border-radius: 0.5rem;
-  }
-  
-  .cart-details {
-    flex: 1;
-  }
-  
-  .remove-btn {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 0.5rem 0.75rem;
-    border-radius: 15px;
-    cursor: pointer;
-  }
-  
-  .remove-btn:hover {
-    background-color: darkred;
-  }
-  
-  .cart-total {
-    text-align: right;
-    margin-top: 2rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-  
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.cart-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cart-header h1 {
+  font-size: 2rem;
+  color: #7b1e3a;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.cart-subtitle {
+  font-size: 1rem;
+  color: #777;
+}
+
+.empty-cart {
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 2rem;
+  background: #f8f8f8;
+  border-radius: 10px;
+}
+
+.browse-link {
+  margin-top: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #7b1e3a;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.browse-link:hover {
+  background-color: #5c162e;
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.cart-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+}
+
+.cart-image {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.cart-details {
+  flex: 1;
+}
+
+.cart-details h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.cart-details .price {
+  font-weight: bold;
+  color: #7b1e3a;
+}
+
+.remove-btn {
+  background-color: #7b1e3a;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.remove-btn:hover {
+  background-color: #7b1e3a;
+}
+
+.cart-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fdfdfd;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-top: 2rem;
+}
+
+.cart-total-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Playfair Display', serif;
+  background: linear-gradient(145deg, #ffffff, #f4f4f4);
+  padding: 1rem 2rem;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cart-total-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.total-label {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 0.2rem;
+  font-weight: 500;
+}
+
+.total-amount {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #7b1e3a;
+  letter-spacing: 1px;
+}
+
+.checkout-btn {
+  background-color: #7b1e3a;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.checkout-btn:hover {
+  background-color: #5c162e;
+  transform: translateY(-2px);
+}
+
+
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+.quantity-control button {
+  background: #7b1e3a;
+  color: white;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.quantity-control button:hover {
+  background: #5c162e;
+}
+
+.quantity-control span {
+  font-size: 1rem;
+  min-width: 20px;
+  text-align: center;
+  color: #333;
+}

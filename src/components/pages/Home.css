@@ -2,13 +2,13 @@
   position: relative;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
+  color: white;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
-  text-align: center;
-  z-index: 1;
 }
 
 .background-video {
@@ -18,19 +18,128 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: -2;
+}
+
+/* Dark overlay for better readability */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.55);
   z-index: -1;
 }
 
-  .home h1 {
-    font-size: 3rem;
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
+/* Hero Content Styling */
+.hero-content {
+  max-width: 800px;
+  padding: 2rem;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3.2rem;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #f0f0f0;
+  margin-top: 20px;
+  font-family: 'Lora', serif;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 0.8rem 1.8rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #7b1e3a;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #5c162e;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #fff;
+  color: #7b1e3a;
+}
+
+/* About Section */
+.about-section {
+  background: rgba(255, 255, 255, 0.7); /* translucent white */
+  backdrop-filter: blur(6px); /* adds a frosted glass effect */
+  color: #222;
+  text-align: center;
+  padding: 4rem 1.5rem;
+  margin-top: 4rem;
+  border-radius: 1rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  color: #7b1e3a;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.about-section p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #333;
+  letter-spacing: 0.3px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
   }
-  
-  .home p {
-    font-size: 1.2rem;
-    color: black;
-    margin-top: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
+  .hero-content p {
+    font-size: 1rem;
   }
-  
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .about-section {
+    padding: 3rem 1rem;
+    margin-top: 3rem;
+  }
+}

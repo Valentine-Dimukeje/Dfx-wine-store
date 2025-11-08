@@ -1,45 +1,61 @@
 .about-page {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .about-page h1 {
-    font-size: 2.5rem;
-    font-family: 'Courier New', Courier, monospace;
-    color: black;  /* Dark red to match wine vibes */
-  }
-  
-  .about-page section {
-    margin: 20px 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  
-  .about-page h2 {
-    font-size: 1.8rem;
-    color: black;
-  }
-  
-  .about-page p {
-    font-size: 1.2rem;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  .about-page ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .about-page ul li {
-    padding: 10px 0;
-  }
-  
-  footer {
-    margin-top: 20px;
-  }
-  
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
+  font-family: 'Georgia', serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.7;
+}
+
+.about-page h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #7b1e3a;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.intro {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.about-page h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  color: #444;
+}
+
+.about-page p {
+  font-size: 1rem;
+  margin: 0.8rem 0;
+}
+
+.reasons {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.reasons li {
+  margin-bottom: 1rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.reasons li::before {
+  content: "✓";
+  color: #7b1e3a;
+  position: absolute;
+  left: 0;
+}
+
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  font-style: italic;
+  color: #666;
+}

@@ -1,78 +1,58 @@
-/* Contact.css */
+.contact {
+  background-color: #fdfdfd;
+  padding: 3rem 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f3f4f6;
-  }
-  
-  .contact {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  .contact-container {
-    background-color: #ffffff;
-    max-width: 400px;
-    width: 100%;
-    padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #1f2937;
-    font-family: 'Courier New', Courier, monospace;
-  }
-  
-  p {
-    font-size: 1.2rem;
-    text-align: center;
-    color: #374151;
-    margin-bottom: 16px;
-  }
-  
-  .contact-item {
-    background-color: #e0f2fe;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  }
-  
-  .contact-item h2 {
-    font-size: 1.2rem;
-    color: black;
-    margin-bottom: 5px;
-    font-family: monospace;
-  }
-  
-  .contact-item p {
-    color: #111827;
-    display: inline;
-  }
-  
-  .contact-item a {
-    color: #1d4ed8;
-    text-decoration: underline;
-    transition: color 0.2s;
-  }
-  
-  .contact-item a:hover {
-    color: #2563eb;
-  }
-  
-  footer {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 1.2rem;
-    color: #6b7280;
-  }
-  
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: #333;
+}
+
+.contact-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #7b1e3a;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.intro {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.contact-details {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-bottom: 2rem;
+}
+
+.contact-item h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+  color: #444;
+}
+
+.contact-item a {
+  color: #7b1e3a;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.additional-info {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+footer {
+  font-style: italic;
+  color: #777;
+}

@@ -3,25 +3,26 @@ import './Products.css';
 import { motion } from 'framer-motion';
 
 const products = [
-  { id: 1, name: 'Red Wine', price: '$50', image: '/image/Chando.jpg',  description: 'A smooth and sweet red wine with rich berry flavors.' },
-  { id: 2, name: 'Floral Wine', price: '$65', image: '/image/ddd.jpg' },
-  { id: 3, name: 'Classic Red', price: '$75', image: '/image/Bacardi.jpg' },
-  { id: 4, name: 'Red Wine', price: '$50', image: '/image/Declan sweet.jpg' },
-  { id: 5, name: 'Floral Wine', price: '$65', image: '/image/Martini sparkling rose.jpg' },
-  { id: 6, name: 'Classic Red', price: '$75', image: '/image/wolf blass merlot.jpg' },
-  { id: 1, name: 'Red Wine', price: '$50', image: '/image/Chando.jpg' },
-  { id: 2, name: 'Floral Wine', price: '$65', image: '/image/ddd.jpg' },
-  { id: 3, name: 'Classic Red', price: '$75', image: '/image/Bacardi.jpg' },
-  { id: 4, name: 'Red Wine', price: '$50', image: '/image/Declan sweet.jpg' },
-  { id: 5, name: 'Floral Wine', price: '$65', image: '/image/Martini sparkling rose.jpg' },
-  { id: 6, name: 'Classic Red', price: '$75', image: '/image/wolf blass merlot.jpg' },
-  { id: 1, name: 'Red Wine', price: '$50', image: '/image/Chando.jpg' },
-  { id: 2, name: 'Floral Wine', price: '$65', image: '/image/ddd.jpg' },
-  { id: 3, name: 'Classic Red', price: '$75', image: '/image/Bacardi.jpg' },
-  { id: 4, name: 'Red Wine', price: '$50', image: '/image/Declan sweet.jpg' },
-  { id: 5, name: 'Floral Wine', price: '$65', image: '/image/Martini sparkling rose.jpg' },
-  { id: 6, name: 'Classic Red', price: '$75', image: '/image/wolf blass merlot.jpg' },
+  { id: 1, name: 'Red Wine', price: '50', image: '/image/Chando.jpg',  description: 'A smooth and sweet red wine with rich berry flavors.' },
+  { id: 2, name: 'Floral Wine', price: '65', image: '/image/ddd.jpg' },
+  { id: 3, name: 'Classic Red', price: '75', image: '/image/Bacardi.jpg' },
+  { id: 4, name: 'Red Wine', price: '50', image: '/image/Declan sweet.jpg' },
+  { id: 5, name: 'Floral Wine', price: '65', image: '/image/Martini sparkling rose.jpg' },
+  { id: 6, name: 'Classic Red', price: '75', image: '/image/wolf blass merlot.jpg' },
+  { id: 1, name: 'Red Wine', price: '50', image: '/image/Chando.jpg' },
+  { id: 2, name: 'Floral Wine', price: '65', image: '/image/ddd.jpg' },
+  { id: 3, name: 'Classic Red', price: '75', image: '/image/Bacardi.jpg' },
+  { id: 4, name: 'Red Wine', price: '50', image: '/image/Declan sweet.jpg' },
+  { id: 5, name: 'Floral Wine', price: '65', image: '/image/Martini sparkling rose.jpg' },
+  { id: 6, name: 'Classic Red', price: '75', image: '/image/wolf blass merlot.jpg' },
+  { id: 1, name: 'Red Wine', price: '50', image: '/image/Chando.jpg' },
+  { id: 2, name: 'Floral Wine', price: '65', image: '/image/ddd.jpg' },
+  { id: 3, name: 'Classic Red', price: '75', image: '/image/Bacardi.jpg' },
+  { id: 4, name: 'Red Wine', price: '50', image: '/image/Declan sweet.jpg' },
+  { id: 5, name: 'Floral Wine', price: '65', image: '/image/Martini sparkling rose.jpg' },
+  { id: 6, name: 'Classic Red', price: '75', image: '/image/wolf blass merlot.jpg' },
 ];
+
 
 function Products({ addToCart }) {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -33,17 +34,17 @@ function Products({ addToCart }) {
         <div className="product-grid">
           {products.map((product, index) => (
             <motion.div
-              key={`${product.id}-${index}`}
+              key={product.id}
               className="product-card"
-              initial={{ opacity: 0, scale: 0.8 }}
+              initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.4, delay: index * 0.05 }}
               whileHover={{ scale: 1.05 }}
               onClick={() => setSelectedProduct(product)}
             >
               <img src={product.image} alt={product.name} />
               <h2>{product.name}</h2>
-              <p>{product.price}</p>
+              <p>${product.price}</p>
             </motion.div>
           ))}
         </div>
@@ -56,15 +57,18 @@ function Products({ addToCart }) {
             <img src={selectedProduct.image} alt={selectedProduct.name} />
             <h2>{selectedProduct.name}</h2>
             <p>{selectedProduct.description}</p>
-            <h3>{selectedProduct.price}</h3>
+            <h3>${selectedProduct.price}</h3>
             <button onClick={() => {
               addToCart(selectedProduct);
-              setSelectedProduct(null); // Close after adding
-            }}>Add to Cart</button>
+              setSelectedProduct(null);
+            }}>
+              Add to Cart
+            </button>
           </div>
         </div>
       )}
     </div>
   );
 }
+
 export default Products;
