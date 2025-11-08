@@ -8,6 +8,7 @@ import Contact from './components/pages/Contact';
 import Carts from './components/pages/Cart';
 import Signup from './components/pages/Signup';
 import Checkout from './components/pages/Checkout';
+import Footer from './components/pages/Footer';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -66,6 +67,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/signup" element={<Signup />} />
       </Routes>
+       <Footer /> 
     </Router>
   );
 }
