@@ -59,17 +59,17 @@ function Home() {
       <section className="features" id="features">
         {[
           {
-            img: "/image/barrel.png",
+            img: "/image/barrel.jpg",
             title: "Tradition & Craft",
             text: "Each bottle embodies generations of expertise and a passion for perfection.",
           },
           {
-            img: "/image/glass.png",
+            img: "/image/glass.jpeg",
             title: "Exceptional Taste",
             text: "Experience smooth textures, rich aromas, and sophisticated flavors.",
           },
           {
-            img: "/image/wine-bottle.png",
+            img: "/image/wineB.jpeg",
             title: "Global Selection",
             text: "We curate wines from the world’s most prestigious vineyards and regions.",
           },

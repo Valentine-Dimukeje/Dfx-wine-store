@@ -43,9 +43,9 @@ html {
 }
 
 .hero-content h1 {
-  font-size: 3.2rem;
+  font-size: 2rem;
   font-family: 'Courier New', Courier, monospace;
-  font-weight: 700;
+  font-weight: 500;
   color: #fff;
 }
 
@@ -132,23 +132,23 @@ html {
   color: #ddd;
   font-size: 0.95rem;
 }
-
 /* About Section */
 .about-section {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(6px);
-  color: #222;
+  background: rgba(20, 20, 20, 0.75); /* darker translucent tone to match features */
+  backdrop-filter: blur(10px);
+  color: #f2f2f2;
   text-align: center;
   padding: 4rem 1.5rem;
   margin: 5rem auto 3rem;
   border-radius: 1rem;
   max-width: 900px;
   font-family: 'Courier New', Courier, monospace;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
 }
 
 .about-section h2 {
-  color: #7b1e3a;
+  color: #e2b6c2; /* subtle wine accent tone */
   font-size: 2rem;
   margin-bottom: 1rem;
   font-weight: 700;
@@ -157,7 +157,7 @@ html {
 .about-section p {
   font-size: 1.05rem;
   line-height: 1.8;
-  color: #333;
+  color: #ddd;
   max-width: 700px;
   margin: 0 auto 1.5rem;
 }
@@ -165,11 +165,14 @@ html {
 .about-section .btn-primary {
   background-color: #7b1e3a;
   color: #fff;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .about-section .btn-primary:hover {
-  background-color: #5c162e;
+  background-color: #b84a6c;
+  transform: translateY(-3px);
 }
+
 
 /* Footer Section */
 .footer {
@@ -212,7 +215,7 @@ html {
 /* Responsive */
 @media (max-width: 768px) {
   .hero-content h1 {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
   .hero-content p {
     font-size: 1rem;
